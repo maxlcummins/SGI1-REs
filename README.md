@@ -20,4 +20,4 @@ Following this, BLAST data for each assembly was tagged with the filename and co
     done;
     cat *.new > CD-hit_SGI1-REs.txt```
 
-Afterwards, a custom R script available [here___]() was used to generate a [dendrogram]() that could be used to inform the presence of different SGI1-RE variants within the collection.
+Afterwards, a custom R script available  was used to generate a dendrogram that could be used to inform the presence of different SGI1-RE variants within the collection.
