@@ -2,7 +2,7 @@
 A Github repository containing supplementary methodology and materials for a manuscript. DOI to be included on publication.
 
 ## SGI1-related element (SGI1-RE) dendrogram
-A non-redundant nucleotide database was created by concatenating the CDS fasta files of representative SGI1-REs from the NCBI nucleotide database, including accession numbers.
+A non-redundant nucleotide database was created by concatenating the CDS fasta files of representative SGI1-REs from the NCBI nucleotide database.
 
 This was performed using CD-HIT version 4.8.1 with the following command:
 
@@ -19,3 +19,5 @@ Following this, BLAST data for each assembly was tagged with the filename and co
     do paste $f <(yes $f | head -n $(cat $f | wc -l)) > $f.new;
     done;
     cat *.new > CD-hit_SGI1-REs.txt```
+
+Afterwards, a custom R script available [here___]() was used to generate a [dendrogram]() that could be used to inform the presence of different SGI1-RE variants within the collection.
