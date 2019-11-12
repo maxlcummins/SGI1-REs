@@ -1,0 +1,8 @@
+###Configuration for aribalord
+
+# path to output
+output: /Users/maxcummins/test_curl/BIGSIlord
+
+# path to reads
+fasta: /Users/maxcummins/test_curl/BIGSIlord/References
+
