@@ -6,11 +6,11 @@ A non-redundant nucleotide database was created by concatenating the CDS fasta f
 
 This was performed using CD-HIT version 4.8.1 with the following command:
 
-```cd-hit -i References_CDhit/SGI1-RE_cat.fasta -o CD_hit_SGI1s_100.fa -c 1```
+``` cd-hit -i References_CDhit/SGI1-RE_cat.fasta -o CD_hit_SGI1s_100.fa -c 1```
 
 Subsequently, BLASTn was used to screen samples under investigation for the carriage of genes in the non-redundant nucleotide database:
 
-```for f in assemblies/*.fasta; do blastn -num_threads 2 -evalue 0.001 -db CD_hit_SGI1s_100.fa -query ${f} -out output/${f}.out -outfmt "6 qseqid stitle sseqid pident length slen sstart send qstart qend qlen mismatch gapopen evalue bitscore"; done```
+``` for f in assemblies/*.fasta; do blastn -num_threads 2 -evalue 0.001 -db CD_hit_SGI1s_100.fa -query ${f} -out output/${f}.out -outfmt "6 qseqid stitle sseqid pident length slen sstart send qstart qend qlen mismatch gapopen evalue bitscore"; done```
 
 Following this, BLAST data for each assembly was tagged with the filename and concatenated into a single file:
 
