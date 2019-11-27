@@ -47,8 +47,10 @@ hc <- hclust(dd, method = "ward.D2")
 #create a dendrogram
 hcd <- as.dendrogram(hc)
 
+par(mar = c(10, 4.1, 4.1, 2.1))
+
 #change the font size and other cosmetic aspects of the dendrogram
-nodePar <- list(lab.cex = 0.45, pch = c(NA, 19), 
+nodePar <- list(lab.cex = .7, pch = c(NA, 19), 
                 cex = 0.3, col = "blue")
 
 #plot the dendrogram
