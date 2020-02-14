@@ -1,4 +1,4 @@
-# Salmonella genomic island 1 is widely disseminated in the Proteobacteriaceae: Identification of a potential ancestral SGI2 variant in Vibrio cholerae
+# Salmonella Genomic Island 1 is Broadly Disseminated within Gammaproteobacteriaceae.
 A Github repository containing supplementary methodology and materials for a manuscript.
 
 DOI: [10.3390/microorganisms8020161](https://doi.org/10.3390/microorganisms8020161)
